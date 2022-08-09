@@ -41,6 +41,7 @@ molecule:
         tag: "bookworm"
   tags:
     - local
+    - LOCALHOST
 
 testing:
   stage: test
