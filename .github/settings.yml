@@ -1,0 +1,8 @@
+---
+#
+# Ansible managed
+#
+repository:
+  description: Installs Adminer for Database management.
+  homepage: https://buluma.github.io/
+  topics: system, database, development, adminer, mysql, mariadb, php, ansible, molecule, tox, playbook, hacktoberfest
