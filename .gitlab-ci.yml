@@ -42,6 +42,7 @@ molecule:
   tags:
     - local
     - LOCALHOST
+    - localhost
 
 testing:
   stage: test
