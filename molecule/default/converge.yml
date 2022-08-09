@@ -15,4 +15,6 @@
   roles:
     - role: buluma.bootstrap
     - role: buluma.apache
+    - role: buluma.ca_certificates
+    - role: buluma.openssl
     - role: buluma.adminer
