@@ -4,6 +4,7 @@ roles:
   - name: buluma.apache
   - name: buluma.openssl
   - name: buluma.ca_certificates
+  - name: buluma.python_pip
 collections:
   - name: community.general
   - name: ansible.posix
