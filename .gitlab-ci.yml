@@ -20,8 +20,6 @@ molecule:
   parallel:
     matrix:
       - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
         tag: "8"
       - image: "fedora-systemd"
         tag: "35"
@@ -51,8 +49,6 @@ testing:
   retry: 1
   parallel:
     matrix:
-      - image: "enterpriselinux"
-        tag: "7"
       - image: "enterpriselinux"
         tag: "8"
       - image: "fedora-systemd"
