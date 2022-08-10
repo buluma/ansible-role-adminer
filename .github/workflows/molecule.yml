@@ -44,9 +44,9 @@ jobs:
       matrix:
         config:
           - image: "enterpriselinux"
-            tag: "8"
+            tag: "7"
           - image: "enterpriselinux"
-            tag: "latest"
+            tag: "8"
           - image: "fedora-systemd"
             tag: "35"
           - image: "fedora-systemd"
