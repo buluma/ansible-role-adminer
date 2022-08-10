@@ -39,10 +39,6 @@ molecule:
         tag: "latest"
       - image: "debian-systemd"
         tag: "bookworm"
-  tags:
-    - local
-    - LOCALHOST
-    - localhost
 
 testing:
   stage: test
