@@ -1,0 +1,17 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "adminer" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.apache" [fillcolor=green style=filled]
+    "buluma.openssl" [fillcolor=green style=filled]
+    "buluma.ca_certificates" [fillcolor=green style=filled]
+    "buluma.python_pip" [fillcolor=green style=filled]
+  }
+  "adminer" -> "buluma.bootstrap"
+  "adminer" -> "buluma.apache"
+  "adminer" -> "buluma.openssl"
+  "adminer" -> "buluma.ca_certificates"
+  "adminer" -> "buluma.python_pip"
+}
