@@ -1,4 +1,4 @@
-# [adminer](#adminer)
+# [Ansible role adminer](#adminer)
 
 Installs Adminer for Database management.
 
