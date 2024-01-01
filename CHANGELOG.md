@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-adminer/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-adminer/compare/0.1.0...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#6](https://github.com/buluma/ansible-role-adminer/issues/6)
+
 ## [0.1.0](https://github.com/buluma/ansible-role-adminer/tree/0.1.0) (2022-08-10)
 
 [Full Changelog](https://github.com/buluma/ansible-role-adminer/compare/de66fc96502e98ce4cf091e9703ab3d03b045033...0.1.0)
