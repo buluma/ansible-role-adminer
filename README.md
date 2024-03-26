@@ -21,7 +21,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
   pre_tasks:
     - name: Update apt cache.
-      apt: update_cache=yes cache_valid_time=600
+      apt: update_cache=true cache_valid_time=600
       when: ansible_os_family == 'Debian'
       changed_when: false
 
@@ -43,7 +43,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ```yaml
 ---
 # defaults file for adminer
-adminer_download_url: https://www.adminer.org/latest.php
+adminer_download_url: "https://www.adminer.org/latest.php"
 adminer_install_dir: /opt/adminer
 adminer_install_filename: adminer.php
 adminer_symlink_dirs: []
