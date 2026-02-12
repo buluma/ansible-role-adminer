@@ -7,6 +7,8 @@
 **Closed issues:**
 
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#6](https://github.com/buluma/ansible-role-adminer/issues/6)
+- Update action [\#5](https://github.com/buluma/ansible-role-adminer/issues/5)
+- rebuild action [\#4](https://github.com/buluma/ansible-role-adminer/issues/4)
 
 ## [0.1.0](https://github.com/buluma/ansible-role-adminer/tree/0.1.0) (2022-08-10)
 
