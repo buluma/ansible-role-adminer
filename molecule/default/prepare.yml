@@ -6,7 +6,7 @@
 
   roles:
     - role: buluma.bootstrap
-    - role: buluma.python_pip
-    - role: buluma.apache
-    - role: buluma.ca_certificates
-    - role: buluma.openssl
+    # - role: buluma.python_pip
+    # - role: buluma.apache
+    # - role: buluma.ca_certificates
+    # - role: buluma.openssl
