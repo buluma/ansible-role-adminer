@@ -13,9 +13,4 @@
       changed_when: false
 
   roles:
-    - role: buluma.bootstrap
-    - role: buluma.python_pip
-    - role: buluma.apache
-    - role: buluma.ca_certificates
-    - role: buluma.openssl
     - role: buluma.adminer
