@@ -3,3 +3,4 @@ ansible-role-adminer
 ansible-role-adminer
 ansible-role-adminer
 ansible-role-adminer [yamllint]: ./.ansible/roles/buluma.apache/tasks/configure-Debian.yml 8:15 error forbidden implicit octal value "0644" (octal-values) 17:15 error forbidden implicit octal value "0644" (octal-values) 39:15 error forbidden implicit octal value "0644" (octal-values) 48:15 error forbidden implicit octal value "0644" (octal-values) 
+ansible-role-adminer [generator]: ERROR: Unhandled exception when retrieving 'DEFAULT_LOCAL_TMP': [Errno 1] Operation not permitted: '/Users/shadowwalker/.ansible/tmp/ansible-local-81900qb75n46q'
