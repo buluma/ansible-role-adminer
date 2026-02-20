@@ -2,7 +2,7 @@
 # tasks file for adminer
 # Install Adminer.
 - name: Ensure Adminer directory exists.
-  ansible.builtin.file:  # noqa 208
+  ansible.builtin.file: # noqa 208
     path: "{{ adminer_install_dir }}"
     state: directory
     recurse: true
