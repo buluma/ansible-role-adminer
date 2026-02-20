@@ -2,10 +2,10 @@
 galaxy_info:
   author: buluma
   role_name: adminer
-  description: 'Installs Adminer for Database management.'
+  description: "Installs Adminer for Database management."
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: '2.1
+  min_ansible_version: "2.1"
   platforms:
     - name: EL
       versions:
