@@ -12,36 +12,36 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - name: Converge
-    hosts: all
-    become: true
+- name: Converge
+  hosts: all
+  become: true
 
-    vars:
-      adminer_add_apache_config: true
+  vars:
+    adminer_add_apache_config: true
 
-    pre_tasks:
-      - name: Update apt cache.
-        ansible.builtin.apt:
-          update_cache: "true"
-          cache_valid_time: "600"
-        when: ansible_os_family == 'Debian'
-        changed_when: false
+  pre_tasks:
+  - name: Update apt cache.
+    ansible.builtin.apt:
+      update_cache: "true"
+      cache_valid_time: "600"
+    when: ansible_os_family == 'Debian'
+    changed_when: false
 
-    roles:
-      - role: buluma.adminer
+  roles:
+  - role: buluma.adminer
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-adminer/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - name: Prepare
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: false
 
-    roles:
-      - role: buluma.bootstrap
+  roles:
+  - role: buluma.bootstrap
     # - role: buluma.python_pip
     # - role: buluma.apache
     # - role: buluma.ca_certificates
