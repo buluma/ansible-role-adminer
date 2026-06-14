@@ -62,14 +62,14 @@
   ansible.builtin.set_fact:
     apache_extra_conf_dir: >-
       {{ 'conf-enabled' if apache_vhosts_version == '2.4' else 'conf.d' }}
-  when: adminer_add_apache_config and ansible_os_family == 'Debian'
+  when: adminer_add_apache_config and ansible_facts.os_family == 'Debian'
 
 - name: Add Apache configuration file for Adminer (Debian).
   ansible.builtin.template:
     src: adminer.conf.j2
     dest: "{{ apache_conf_path }}/{{ apache_extra_conf_dir }}/adminer.conf"
     mode: "0644"
-  when: adminer_add_apache_config and ansible_os_family == 'Debian'
+  when: adminer_add_apache_config and ansible_facts.os_family == 'Debian'
   notify: restart apache
 
 - name: Add Apache configuration file for Adminer (RedHat).
@@ -77,5 +77,5 @@
     src: adminer.conf.j2
     dest: "{{ apache_conf_path }}/adminer.conf"
     mode: "0644"
-  when: adminer_add_apache_config and ansible_os_family == 'RedHat'
+  when: adminer_add_apache_config and ansible_facts.os_family == 'RedHat'
   notify: restart apache
