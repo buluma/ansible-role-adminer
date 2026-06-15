@@ -70,7 +70,7 @@
     dest: "{{ apache_conf_path }}/{{ apache_extra_conf_dir }}/adminer.conf"
     mode: "0644"
   when: adminer_add_apache_config and ansible_facts['os_family'] == 'Debian'
-  notify: restart apache
+  notify: Restart apache
 
 - name: Add Apache configuration file for Adminer (RedHat).
   ansible.builtin.template:
@@ -78,4 +78,4 @@
     dest: "{{ apache_conf_path }}/adminer.conf"
     mode: "0644"
   when: adminer_add_apache_config and ansible_facts['os_family'] == 'RedHat'
-  notify: restart apache
+  notify: Restart apache
